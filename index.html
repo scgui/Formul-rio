@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    
+<h2>Formulário de Cadastro do Aluno</h2>
+
+<form method="POST">
+
+    <fieldset>
+        <legend>Dados do Aluno</legend>
+        <table>
+            <tr>
+                <td>
+                    <label>Nome Completo:<br>
+                        <input type="text" name="fullname" size="30">
+                    </label>
+                </td>
+                <td>
+                    <label>Gênero:<br>
+                        <input class="noshadow" type="radio" name="gender" id="masculino" value="masc">
+                        <label for="masculino">Masculino</label><br>
+                        <input class="noshadow" type="radio" name="gender" id="feminino" value="fem">
+                        <label for="feminino">Feminino</label>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Data de Nascimento:<br>
+                        <input type="date" name="date">
+                    </label>
+                </td>
+                <td>
+                    <label>Necessidades Especiais?:<br>
+                        <input class="noshadow" type="radio" name="necessidades" id="nao" value="semNece">
+                        <label for="nao">Não</label><br>
+                        <input class="noshadow" type="radio" name="necessidades" id="sim" value="comNece">
+                        <label for="sim">Sim</label>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Escolaridade:<br>
+                        <select name="serie" id="serie">
+                            <option value="primAno">Educação Infantil Completa</option>
+                            <option value="segAno">1° Ano Completo</option>
+                            <option value="terAno">2° Ano Completo</option>
+                            <option value="quarAno">3° Ano Completo</option>
+                            <option value="quinAno">4° Ano Completo</option>
+                        </select>
+                    </label>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>Dados do Responsável</legend>
+        <table>
+            <tr>
+                <td>
+                    <label>Nome Completo:<br>
+                        <input type="text" name="respfullname" size="30">
+                    </label>
+                </td>
+                <td>
+                    <label>Telefone de Contato:<br>
+                        <input type="tel" name="tel" placeholder="ex. (12)12345-6789">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Data de Nascimento:<br>
+                        <input type="date" name="date">
+                    </label>
+                </td>
+                <td>
+                    <label>Email de Contato:<br>
+                        <input type="email" name="email" size="25">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>RG:<br>
+                        <input type="text" name="rg">
+                    </label>
+                </td>
+                <td>
+                    <label>Renda Familiar: <br>
+                        <select name="renda">
+                            <option value="menosqueum">Menos de 1 salário mínimo</option>
+                            <option value="umadois">De 1 a 2 salários mínimos</option>
+                            <option value="tresaquatro">De 3 a 4 salários mínimos</option>
+                            <option value="cincooumais">Mais de 5 salários mínimos</option>
+                        </select>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>CPF:<br>
+                        <input type="text" name="cpf">
+                    </label>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>Endereço da Residência:</legend>
+        <table>
+            <tr>
+                <td>
+                    <label>Endereço: <br/>
+                        <input type="text" name="address" size="30" placeholder="ex. Rua dos Andradas nr1234"> 
+                    </label>
+                </td>
+                <td>
+                    <label>CEP: <br>
+                        <input type="text" name="cep" placeholder="12345-678">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Município: <br>
+                        <input type="text" name="city" placeholder="ex. Salvador">
+                    </label>
+                </td>
+                <td>
+                    <label>UF: <br>
+                        <select name="states">
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </label>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <input class="noshadow" type="checkbox" name="" id=""> Concordo com os termos do colégio.<br>
+    <input type="submit" name="" id="">
+</form>
+
+
+</body>
+</html>

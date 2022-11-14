@@ -1,0 +1,72 @@
+body {
+    margin: 10px;
+    background-color: #F0EBE3;
+    font-family: 'Montserrat', sans-serif;
+}
+
+fieldset {
+    width: 30%;
+    margin-bottom: 30px;
+    border: 3px solid #7D9D9C;
+}
+
+table {
+    display: flex;
+}
+
+td {
+    padding: 10px;
+}
+
+select {
+    padding: 3px;
+}
+
+legend {
+    font-size: 18px;
+    font-style: italic;
+    color: #7D9D9C;
+}
+
+h2 {
+    color: #576F72;
+}
+
+input, select {
+    box-shadow: 3px 3px #7D9D9C;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
+.noshadow {
+    box-shadow: none;
+}
+
+::placeholder {
+    opacity: 60%;
+}
+
+input[type=date] {
+    padding: 5px;
+    width: 70%;
+}
+
+input[type=submit] {
+    width: 31.5%;
+    margin-bottom: 20px;
+    padding: 8px 15px;
+    box-shadow: none;
+    background-color: #576F72;
+    color: #fff;
+}
+
+input[type=submit]:hover {
+    background-color: #7D9D9C;
+}
+
+input[type=checkbox] {
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
